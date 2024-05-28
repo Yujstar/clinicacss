@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página principal da Clínica João Santos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica João Santos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #555;
+            padding: 0.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+        main {
+            background-color: #fff;
+            margin: 2rem auto;
+            padding: 2rem;
+            width: 80%;
+            max-width: 1200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        ul li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            text-indent: -1.5rem;
+        }
+
+        ul li::before {
+            content: "•";
+            color: #555;
+            font-weight: bold;
+            display: inline-block;
+            width: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: justify;
+            padding: 1rem;
+            margin-top: 2rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contato-info {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                width: 90%;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clínica João Santos</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Bem-vindo à Clínica João Santos</h2>
+        <p>Na nossa clínica, oferecemos uma variedade de serviços médicos de excelência, dedicados ao cuidado integral da sua saúde. Estamos comprometidos em oferecer um atendimento acolhedor e compassivo, garantindo que você se sinta seguro e bem cuidado em todas as etapas do seu tratamento.</p>
+
+        <h2>Nossa Missão</h2>
+        <p>Na <b>Clínica João Santos</b>, nossa missão vai além de diagnosticar e tratar doenças. Nosso compromisso é cuidar de você de maneira completa, considerando sua saúde física, emocional e mental. Cada paciente é único, com necessidades e preocupações específicas, e nosso objetivo é criar um ambiente onde você se sinta compreendido e acolhido.</p>
+        
+        <h2>Nossos Princípios Fundamentais</h2>
+        <p>Os princípios que guiam a <b>Clínica João Santos</b> nos ajudam a alcançar o mais alto padrão de cuidados de saúde, garantindo a satisfação e a confiança dos nossos pacientes.</p>
+        
+        <ul>
+            <li><b>Compromisso com a Excelência:</b> Nosso compromisso é oferecer tratamentos seguros, eficazes e baseados em evidências. Nossa equipe é altamente qualificada e dedicada a garantir os melhores resultados para você.</li>
+            <li><b>Empatia e Respeito:</b> Valorizamos cada pessoa que nos procura, demonstrando empatia e respeito em todas as interações. Criamos um ambiente inclusivo e acolhedor, reconhecendo as necessidades únicas de cada paciente.</li>
+            <li><b>Integridade e Ética:</b> Mantemos os mais altos padrões de integridade e ética em todas as nossas práticas. Agimos com honestidade e transparência, garantindo que você possa confiar em nós para receber o melhor cuidado possível.</li>
+        </ul>
+    </main>
+    <footer>
+        <p class="contato-info">Entre em contato: contato@clinicajs.com | Endereço: Rua dos Lagos, 328 - Santos, São Paulo</p>
+    </footer>
+</body>
+</html>

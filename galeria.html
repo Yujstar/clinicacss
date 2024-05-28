@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Galeria de Imagens da Clínica João Santos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Clínica João Santos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #555;
+            padding: 0.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+        main {
+            background-color: #fff;
+            margin: 2rem auto;
+            padding: 2rem;
+            width: 80%;
+            max-width: 1200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0.5rem; /* Reduzindo o padding */
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contato-info {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                width: 90%;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clínica João Santos</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nossa Estrutura</h2>
+        <div class="gallery">
+            <img src="https://www.meuconsultorio.com/wp-content/uploads/2020/04/9-dicas-para-manter-a-sua-agenda-medica-organizada.jpg" alt="Imagem 1">
+            <img src="https://eapgoias.com.br/wp-content/uploads/2023/05/clinica-consultorio-7-scaled.jpg" alt="Imagem 2">
+            <img src="https://blog.circulosaude.com.br/wp-content/uploads/2023/05/clinica-oftalmologia-1.png" alt="Imagem 3">
+            <img src="https://i1.wp.com/blog.iclinic.com.br/wp-content/uploads/2019/07/diferenca-entre-clinica-e-consultorio-medica-teclado.jpg?ssl=1" alt="Imagem 4">
+            <img src="https://promais.med.br/wp-content/uploads/2021/05/clinica-medica.jpg" alt="Imagem 5">
+            <img src="https://blog.sinaxys.com/wp-content/uploads/2022/02/recepcao-clinica-recepcionista-telefone.jpg" alt="Imagem 6">
+            <img src="https://thumbs.dreamstime.com/b/o-doutor-explica-documento-do-exame-m%C3%A9dico-completo-paciente-masculino-na-cl%C3%ADnica-m%C3%A9dica-ou-sa%C3%BAde-mental-hospital-e-conceito-143145474.jpg" alt="Imagem 7">
+            <img src="https://empresasecooperativas.com.br/wp-content/uploads/2019/04/clinica-m%C3%A9dica-1024x535.jpg" alt="Imagem 8">
+        </div>
+    </main>
+    <footer>
+        <p>Entre em contato: contato@clinicajs.com | Endereço: Rua dos Lagos, 385 - Santos, São Paulo</p>
+    </footer>
+</body>
+</html>
